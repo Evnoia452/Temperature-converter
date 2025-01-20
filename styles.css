@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+body {
+    text-align: center;
+    height: 500px;
+    padding: 70px;
+    background-color: cornsilk;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    padding-left: 400px;
+}
+
+img {
+    height: 150px;
+
+}
+
+.tempconv {
+    height: 250px;
+    width: 250px;
+    
+
+}
+
+label {
+    display:  flex;
+    justify-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight:bold ;
+}
+
+#resetButton {
+    background-color: rgba(250, 235, 215, 0.897);
+    color: black;
+    font-size: larger;
+    font-weight:bold ;
+    padding: 20px 100px;
+    border-radius: 8px;
+}
+
+#resetButton:hover {
+    background-color: rgb(200, 58, 4);
+
+}
+
+.ball{width: 50px;
+    height: 50px;
+    background-color:rgb(248, 213, 242);
+    border-radius: 50%;
+    left: 0;
+    position: absolute;
+    animation: moveright;
+    animation-duration: 2s;
+    animation-iteration-count: infinite ;
+
+}
+@keyframes moveright {
+    to{
+        left: calc(100% - 50%)
+    }
+}
+
+
+.balll{width: 50px;
+    height: 50px;
+    background-color:rgb(248, 213, 242);
+    border-radius: 50%;
+    right: 0;
+    position: absolute;
+    animation: moveleft;
+    animation-duration: 2s;
+    animation-iteration-count: infinite ;
+
+}
+@keyframes moveleft {
+    to{
+        right: calc(100% - 50%)
+    }
+}

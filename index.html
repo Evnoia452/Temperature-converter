@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="Chinedu Favour.css">
+    <script src="Chinedu Favour.js" defer></script>
+</head>
+<body>
+    
+    <div class="grid-item img">
+        <img src="Chinedu Favour.jpg"/>
+    </div>
+
+    <div class="temp-conv">
+        <h1>TEMPERATURE CONVERTER</h1>
+        <p><i>Converts as you input your number!</i></p>
+
+        <div class="main">
+            <label> Celsius: <input type="number" id="celsiusInput" oninput="convertTemperature('Celsius')" /> </label><br>
+            <label> Fahrenheit: <input type="number" id="fahrenheitInput" oninput="convertTemperature('Fahrenheit')" /> </label><br>
+            <label> Kelvin: <input type="number" id="kelvinInput" oninput="convertTemperature('Kelvin')" /> </label><br>
+        </div>
+        </div>
+
+        <div class="reset-button">
+            <input type="button" id="resetButton" value="RESET" />
+        </div>
+    </div>
+<br />
+    <div>
+        <div class="ball"></div>
+        <div class="balll"></div>
+    </div>
+
+
+</body>
+</html>
